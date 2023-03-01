@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       entry: 'src/components/MyComponent.vue',
       name: 'MyComponent',
-      fileName: 'my-component.js',
+      fileName: 'my-component',
     },
     rollupOptions: {
       external: ['vue'],
