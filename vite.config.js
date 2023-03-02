@@ -9,19 +9,4 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  build: {
-    lib: {
-      entry: 'src/components/MyComponent.vue',
-      name: 'MyComponent',
-      fileName: 'my-component',
-    },
-    rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue',
-        },
-      },
-    },
-  },
 });
